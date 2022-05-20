@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from myapp.views import hi
 from myapp.views import main
+from myapp.views import h4
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sayhello/<str:username>', main),
+    path('sayhello2/<str:username>', h4),
     path('', main),
 ]
